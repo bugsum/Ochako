@@ -8,7 +8,8 @@ const ochako = new Client({
         Intents.Guilds,
         Intents.GuildMessages,
         Intents.GuildMembers,
-        Intents.MessageContent
+        Intents.MessageContent,
+        Intents.GuildModeration
     ]
 });
 
