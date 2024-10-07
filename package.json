@@ -1,0 +1,26 @@
+{
+  "name": "ochako",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "ts-node src/index.ts",
+    "deploy": "ts-node src/scripts/deploy.ts",
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.{ts,js}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/ws": "^8.5.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
