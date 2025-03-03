@@ -1,11 +1,12 @@
 {
     "name": "ochako",
-    "version": "1.0.0",
+    "version": "0.0.1-beta",
     "description": "First multi-purpose community maintained AI Based Discord Bot!",
     "main": "index.js",
     "scripts": {
         "start": "cross-env TS_NODE_BASEURL=./dist node -r tsconfig-paths/register dist/index.js",
         "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/index.ts",
+        "deploy": "ts-node -r tsconfig-paths/register src/scripts/deploy.ts",
         "build": "tsc",
         "lint": "eslint 'src/**/*.ts'",
         "fix": "eslint 'src/**/*.ts' --fix"
@@ -23,7 +24,10 @@
     "homepage": "https://github.com/bugsum/Ochako#readme",
     "dependencies": {
         "discord.js": "^14.18.0",
-        "dotenv": "^16.4.7"
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "winston": "^3.17.0",
+        "yaml": "^2.7.0"
     },
     "devDependencies": {
         "@eslint/js": "^9.21.0",

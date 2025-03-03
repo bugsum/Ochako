@@ -9,10 +9,10 @@
         "skipLibCheck": true,
         "baseUrl": "./src",
         "paths": {
-            "@utils/*": ["utils/*"],
             "@commands/*": ["commands/*"],
-            "@models/*": ["models/*"],
-            "@types/*": ["types/*"],
+            "@handlers/*": ["handlers/*"],
+            "@lib/*": ["lib/*"],
+            "@scripts/*": ["scripts/*"],
             "@/*": ["./*"]
         }
     }

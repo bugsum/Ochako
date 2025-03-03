@@ -1,6 +1,6 @@
 import { config } from "dotenv";
 
-config();
+config({ path: process.cwd() + "/.env" });
 
 export function env(key: string, fallBack?: string): string {
     const value = process.env[key] ?? fallBack;

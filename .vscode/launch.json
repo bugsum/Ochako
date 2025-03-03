@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run Dev Script",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "dev"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": ["<node_internals>/**"],
+            "envFile": "${workspaceFolder}/.env"
+        },
+        // create a new configuration for deploy script
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run Deploy Script",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "deploy"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": ["<node_internals>/**"],
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
