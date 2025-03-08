@@ -8,7 +8,7 @@ export default createCommand({
     type: CommandType.CHAT_INPUT,
     interact: (client, interaction) => {
         return interaction.reply({
-            content: `My current ping is ${client.ws.ping}`,
+            content: `My current ping is ${client.ws.ping}ms`,
             flags: [MessageFlags.Ephemeral],
         });
     },
