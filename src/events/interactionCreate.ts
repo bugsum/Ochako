@@ -10,8 +10,6 @@ export default createEvent({
                 const commandName = interaction.commandName;
                 const command = client.commandMap.get(commandName);
 
-                logger.info(client.commandMap.map((cmd) => cmd));
-
                 if (!command) {
                     interaction.reply({
                         content: "No command found with that name",
