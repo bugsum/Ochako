@@ -9,7 +9,7 @@ export default createEvent({
         logger.info(`${client.user?.username} is ready!`);
 
         client.user?.setActivity({
-            name: "to Endbyte",
+            name: "Endbyte Studios",
             type: ActivityType.Listening,
         });
     },
